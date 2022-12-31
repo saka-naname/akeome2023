@@ -1,4 +1,6 @@
 function hatuyume() {
+    $(".touchHere").hide();
+
     $("#hatuyume .overlay").animate({
         bottom: "0vh"
     },{
@@ -32,7 +34,14 @@ function hatuyume() {
     }, {
         duration: 600,
         easing: "easeOutCirc"
-    })
+    });
+
+    $("#hatuyume .text").delay(6000).animate({
+        top: "24px"
+    }, {
+        duration: 1800,
+        easing: "easeOutCirc"
+    });
 }
 
 $(document).ready(() => {

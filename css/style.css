@@ -123,3 +123,50 @@ body {
     border-radius: 100%;
     z-index: -1;
 }
+
+.touchHere {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: ab-taro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px #fff;
+    animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+}
+
+.text{
+    font-family: ab-appare, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.akeome {
+    position: absolute;
+    left: calc(50% + 96px);
+    top: -15em;
+    transform: translateX(-50%);
+    font-size: 48px;
+    writing-mode: vertical-rl;
+}
+
+.kotoyoro {
+    position: absolute;
+    left: calc(50% - 96px);
+    top: -15em;
+    transform: translateX(-50%) translateY(24px);
+    font-size: 24px;
+    writing-mode: vertical-rl;
+}
